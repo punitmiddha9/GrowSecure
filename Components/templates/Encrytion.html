@@ -16,7 +16,7 @@
     <!-- Navbar -->
     <nav class="navbar">
         <div class="max-width">
-            <div class="logo"><a href="#">Grow<span>Secure</span></a></div>
+            <div class="logo"><a href="./Sample.html">Grow<span>Secure</span></a></div>
         </ul>
     </nav>
 
@@ -26,7 +26,7 @@
     <h2>File Upload & Image Preview</h2>
 
     <div class="upload_f">
-        <form id="file-upload-form" class="uploader">
+        <form action="./encryptFile" id="file-upload-form" class="uploader">
         <input id="file-upload" type="file" name="fileUpload" accept="image/*" />
 
         <label for="file-upload" id="file-drag">
@@ -45,20 +45,18 @@
             </div>
         </label>
         <div class="secret">
-            <input type="text" placeholder="Enter your Secret Key">
+            <input type="text" placeholder="Enter your Secret Key" name="key">
+        </div>
+        
+        <div class="content">
+            <button type="submit"><span>Submit</span></button>
         </div>
         </form>
-    </div>
-    
-    
-
-    <div class="content">
-        <button><span>Submit</span></button>
     </div>
 
     <div class="footer">
         <footer>
-            Copyright © 2022 All Rights Reserved by GrowSecure. <a href="">Contact Us</a>
+            Copyright © 2022 All Rights Reserved by GrowSecure. <a href="./About_Us.html">Contact Us</a>
         </footer>
     </div>
 
