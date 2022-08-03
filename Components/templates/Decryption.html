@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decryption</title>
+    <script src="https://kit.fontawesome.com/yourcode.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/><link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="/Components/static/content/Style.css">
+    <link rel="stylesheet" href="/Components/static/content/Encyption.css">
+    <script src="../static/scripts/Encryption.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="./Sample.html">Grow<span>Secure</span></a></div>
+        </ul>
+    </nav>
+
+    <h2 class="heading">Decryption</h2>
+    <hr class="line">
+
+    <h4>Uplaod the encrypted image with the corresponding secret key to decrypt.</h4>
+
+    <div class="upload_f">
+        <form action="./decryptFile" id="file-upload-form" class="uploader">
+        <input id="file-upload" type="file" name="fileUpload" accept="image/*" />
+
+        <label for="file-upload" id="file-drag">
+            <img id="file-image" src="#" alt="Preview" class="hidden">
+            <div id="start">
+            <i class="fa fa-download" aria-hidden="true"></i>
+            <div>Select a file or drag here</div>
+            <div id="notimage" class="hidden">Please select an image</div>
+            <span id="file-upload-btn" class="btn btn-primary">Select a file</span>
+            </div>
+            <div id="response" class="hidden">
+            <div id="messages"></div>
+            </div>
+        </label>
+        <div class="secret">
+            <input type="text" placeholder="Enter your Secret Key" name="key">
+        </div>
+        
+        <div class="content">
+            <button type="submit"><span>Submit</span></button>
+        </div>
+        </form>
+    </div>
+
+    <div class="footer">
+        <footer>
+            Copyright © 2022 All Rights Reserved by GrowSecure. <a href="./About_Us.html">Contact Us</a>
+        </footer>
+    </div>
+
+    <script src="../static/scripts/Encryption.js"></script>
+
+</body>
+</html>
