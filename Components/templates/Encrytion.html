@@ -5,12 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encryption</title>
+    
     <script src="https://kit.fontawesome.com/yourcode.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/><link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="/Components/static/content/Encyption.css">
     <script src="../static/scripts/Encryption.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/><link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../static/content/Style.css">
+    <link rel="stylesheet" href="../static/content/Encyption.css">
+    
 </head>
 <body>
     <!-- Navbar -->
@@ -23,7 +27,7 @@
     <h2 class="heading">Encryption</h2>
     <hr class="line">
 
-    <h2>File Upload & Image Preview</h2>
+    <h4>Uplaod the image with a secret key to encrypt</h4>
 
     <div class="upload_f">
         <form action="./encryptFile" id="file-upload-form" class="uploader">
@@ -39,9 +43,6 @@
             </div>
             <div id="response" class="hidden">
             <div id="messages"></div>
-            <!-- <progress class="progress" id="file-progress" value="0">
-                <span>0</span>%
-            </progress> -->
             </div>
         </label>
         <div class="secret">
@@ -49,7 +50,7 @@
         </div>
         
         <div class="content">
-            <button type="submit"><span>Submit</span></button>
+            <button class ="mybtn" type="submit"><span>Submit</span></button>
         </div>
         </form>
     </div>
